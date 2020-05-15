@@ -1,15 +1,21 @@
-html, body {
-    margin: 0;
-    padding: 0;
+ body {
+    background-image: url(../imagenes/base3.JPG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 70px;
+    height: 70px;
+    text-align: center;
 }
 
 .container{
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #1D8348;
     align-items: center;
     justify-content: center;
+    opacity: 0.90;
+  
 }
 
 .todo-list{
@@ -17,15 +23,18 @@ html, body {
     height: 500px;
     overflow-y: scroll;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 30px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 .todo-list form{
-    background-color: #31313a;
-    color: #fff;
-    padding: 20px;
+    background-color: #3D83A4;
+    color: black;
+    padding: 30px;
     border-radius: 15px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;
 }
 
 .todo-list form input{
@@ -36,15 +45,19 @@ html, body {
 }
 
 .tasks{
+    justify-content: center;
+    text-align: center;
     border-radius: 15px;
     border: 1px solid #ccc;
     margin-top: 20px;
+    
 }
 
 .tasks ul{
     list-style: none;
     padding: 5px 5px 20px;
     margin: 0;
+    text-align: center;
 }
 
 .tasks ul li{
@@ -54,24 +67,56 @@ html, body {
     align-items: center;
     border-radius: 15px;
     margin: 5px;
+    text-align: center;
 }
 
 .tasks ul li a{
-    background-color: #a11b1b;
-    color: #fff;
+    background-color: #3D83A4;
+    color: black;
     padding: 5px;
     border-radius: 5px;
 }
 
 .tasks ul li.active{
-    background-color: #90d8e0;
+    background-color: #B9CFD9;
+    color: black;
+    box-shadow: 0 5px rgb(240, 233, 233);
+    transform: translateY(4px);
+    text-align: center;
 }
 
 .tasks ul li.completed{
     background-color: #ccc;
+    color: black;
+    text-align: center;
+    
 }
 
 .tasks ul li.completed p, .tasks ul li.completed a{
     text-decoration: line-through;
     color: #8c8c8c;
+}
+.tasks ul li.completed:hover{
+    background-color: #59AAD1;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 55px;
+    margin: 30px 30px;
+    margin-bottom: 150px;
+}
+.todo-input{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+ul{
+    text-align: center; 
+}
+.active p{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
 }

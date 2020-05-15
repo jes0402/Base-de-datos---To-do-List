@@ -31,7 +31,7 @@ $(document).ready(function(){
 
       $("#add-todo").submit(function(event){
           event.preventDefault();
-          alert("holaa");
+          alert("¡Tenemos tu Dato!");
           var tarea = $("#add-todo #task").val();
           if(tarea.trim() === ""){
               alert("Tiene que ingresar alguna descripcion a la tarea.")
